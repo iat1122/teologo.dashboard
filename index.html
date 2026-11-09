@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Overview · Stockroom</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="glass sidebar">
+      <div class="brand"><span class="logo"></span>Stockroom</div>
+      <nav>
+        <a href="index.html" class="active">Overview</a>
+        <a href="items.html">Items</a>
+      </nav>
+    </aside>
+
+    <main>
+      <header class="page-head">
+        <div>
+          <h1>Overview</h1>
+          <p>Your stock at a glance.</p>
+        </div>
+        <a class="btn primary" href="items.html">Manage items</a>
+      </header>
+
+      <section class="stats">
+        <article class="glass stat"><span>Items</span><strong id="statItems">–</strong></article>
+        <article class="glass stat"><span>Units in stock</span><strong id="statUnits">–</strong></article>
+        <article class="glass stat"><span>Inventory value</span><strong id="statValue">–</strong></article>
+        <article class="glass stat warn"><span>Low or out of stock</span><strong id="statLow">–</strong></article>
+      </section>
+
+      <section class="grid-2">
+        <article class="glass panel">
+          <h2>Items by category</h2>
+          <div id="categoryBars"></div>
+        </article>
+        <article class="glass panel">
+          <h2>Recently added</h2>
+          <ul class="list" id="recentList"></ul>
+        </article>
+      </section>
+    </main>
+  </div>
+  <script src="js/common.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
